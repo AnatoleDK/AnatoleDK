@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/main.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<nav class="tel-navigation">
+				<p><a>м.Київ вул.Богдана Хмельницького 97</a></p>
+				<ul class="tel-list">
+					<li><a href="#">074-456-44-55</a></li>
+					<li><a href="#">8(094)456-47-55</a></li>
+					<li><a href="#">044-333-65-76</a></li>
+				</ul>
+			</nav>
+
+			<div class="logo-navigation">
+				<div class="logo-img"></div>
+				<nav class="navigation-menu">
+					<ul class="drop-list">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">О Нас</a>
+							<ul>
+								<li><a href="#">056-44-55</a></li>
+								<li><a href="#">(094)47-55</a></li>
+								<li><a href="#">044-3-65-</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Услуги</a></li>
+						<li><a href="#">Акции</a></li>
+						<li><a href="#">Бренды</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="mob-nav">
+					<button class="btn-mob"></button>
+					<ul class="drop-list-mob hidden">
+						<li><a href="#">Abstract</a></li>
+						<li><a href="#">Animals/Wildlife</a></li>
+						<li><a href="#">The Arts</a></li>
+						<li><a href="#">Backgrounds/Textures</a></li>
+						<li><a href="#">Beauty/Fashion</a></li>
+						<li><a href="#">Buildings/Landmarks</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="top-box">
+			<div class="slides">
+
+				<div class="slide_imgs">
+
+					<a href="img/myBigImage_1"><img src="img/tatiana-nikitina-tatyana-3703.jpg" width="300px" title="My Image Title"></a>
+					<a href="img/myBigImage_2"><img src="img/image_412302122028413924466.jpg" width="300px" title="My Image Title" data-path="http://www.myurl.com"></a>
+					<a href="img/myBigImage_3"><img src="img/1415048479_hhhhhhhhhhh.jpg" width="300px" title="My Image Title" data-path="http://www.myurl.com"></a>
+					<a href="img/myBigImage_4"><img src="img/myThumbImage_4" title="My Image Title" data-path="http://www.myurl.com"></a>
+					<a href="img/myBigImage_5"><img src="img/myThumbImage_5" title="My Image Title" data-path="http://www.myurl.com"></a>
+
+				</div>//end slide imgs
+
+			</div>//end slides
+		</div>
+		<div class="centr-box">
+			<h2>Create a free account now</h2>
+			<form action="">
+				<button type="submit">Register now</button>
+			</form>
+		</div>
+		<div class="bottom-box">
+			<h3>BROWSE BY CATEGORY</h3>
+			<nav>
+				<ul>
+					<li><a href="">Abstract</a></li>
+					<li><a href="">Animals/Wildlife</a></li>
+					<li><a href="">The Arts</a></li>
+					<li><a href="">Backgrounds/Textures</a></li>
+					<li><a href="">Beauty/Fashion</a></li>
+					<li><a href="">Buildings/Landmarks</a></li>
+				</ul>
+				<ul>
+					<li><a href="">Abstract</a></li>
+					<li><a href="">Animals/Wildlife</a></li>
+					<li><a href="">The Arts</a></li>
+					<li><a href="">Backgrounds/Textures</a></li>
+					<li><a href="">Beauty/Fashion</a></li>
+					<li><a href="">Buildings/Landmarks</a></li>
+				</ul>
+				<ul>
+					<li><a href="">Abstract</a></li>
+					<li><a href="">Animals/Wildlife</a></li>
+					<li><a href="">The Arts</a></li>
+					<li><a href="">Backgrounds/Textures</a></li>
+					<li><a href="">Beauty/Fashion</a></li>
+					<li><a href="">Buildings/Landmarks</a></li>
+				</ul>
+				<ul>
+					<li><a href="">Abstract</a></li>
+					<li><a href="">Animals/Wildlife</a></li>
+					<li><a href="">The Arts</a></li>
+					<li><a href="">Backgrounds/Textures</a></li>
+					<li><a href="">Beauty/Fashion</a></li>
+					<li><a href="">Buildings/Landmarks</a></li>
+				</ul>
+				<ul>
+					<li><a href="">Abstract</a></li>
+					<li><a href="">Animals/Wildlife</a></li>
+					<li><a href="">The Arts</a></li>
+					<li><a href="">Backgrounds/Textures</a></li>
+					<li><a href="">Beauty/Fashion</a></li>
+					<li><a href="">Buildings/Landmarks</a></li>
+				</ul>
+			</nav>
+		</div>
+		<footer>
+			<h4>Copyright © 2013 Css Author</h4>
+		</footer>
+	</div>
+	<script type="text/javascript">
+		window.onload = function(){
+		let btn = document.querySelector('.btn-mob');
+		let list = document.querySelector('.drop-list');
+		btn.addEventListener('click', function(){
+		list.classList.toggle('hidden');
+		});
+		}
+	</script>
+
+
+	<!- Link jQuery ->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!- Include jQuery mobile custom script for swipe functions->
+	<script src="js/jquery.mobile.custom.min.js"></script>
+	<!- Link Slides ->
+	<script src="js/slides.min.js" ></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
