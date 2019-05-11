@@ -1,8 +1,8 @@
 @import url(reset.css);
+@import url(style-slider.css);
 @import url(https://fonts.googleapis.com/css?family=Pangolin&subset=cyrillic-ext);
 *{
-	box-sizing:border-box;]
-
+	box-sizing:border-box;
 }
 html {
 	font: 10px 'Pangolin', sans-serif, cursive;
@@ -85,18 +85,13 @@ header .logo-navigation .drop-list{
 
 
 
-
-
-
 .navigation-menu li {
 	display: block;
 	transition-duration: 0.5s;
 }
-
 .navigation-menu li:hover {
 	cursor: pointer;
 	background: rgba(116, 255, 198, 0.82);
-
 }
 .navigation-menu ul li{
 	position: relative;
@@ -106,15 +101,11 @@ header .logo-navigation .drop-list{
 	opacity: 0;
 	position: absolute;
 	transition: all 0.5s ease;
-
 	left: 0;
 	display: none;
 	width: 20vw;
 	background: rgba(116, 255, 198, 0.82);
-
-
 }
-
 .navigation-menu ul li:hover > ul,
 .navigation-menu ul li ul:hover {
 	visibility: visible;
@@ -126,24 +117,6 @@ ul li ul li {
 	clear: both;
 	width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -192,72 +165,8 @@ header .logo-navigation .mob-nav{
 
 
 
-.top-box{
-	min-width: 100%;
-	height: 520px;
-	background: url(../img/background.jpg) no-repeat;
-	background-size: 100%;
-}
-.search-box{
-	display: inline-block;
-	margin-top: 200px;
-	margin-left: 170px;
-	text-align: center;
-}
-.search-box p{
-	display: inline-block;
-	font: 27px 'Pangolin', sans-serif;
-	color: #ffffff;
-	height: 65px;
-	width: 340px;
-}
-.search-box form{
-	position: relative;
-	height: 45px;
-	width: 420px;
-	margin-top: 30px;
-}
-.search-box form input{
-	display: inline-block;
-	border: none;
-	height: 45px;
-	width: 360px;
-	padding-left: 10px; 
-	font: 21px 'Pangolin', sans-serif;
-	color: #afafaf54;
-}
-.search-box form button{
-	position: absolute;
-    right: 0;
-	height: 45px;
-	width: 60px;
-	border: none;
-	background-color: #ffffff;
-	background-image: url(../img/Untitled-3-Recovered.png);
-    background-position: 4px -46px;
-}
-.centr-box{
-	display: flex;
-	flex-wrap: wrap;
-	align-content: center;
-	justify-content: center;
-	min-height: 115px;
-	border-bottom: 2px solid #E9E9E9;
-}
-.centr-box h2{
-	font: 37px 'Pangolin', sans-serif;
-	color: #8b8b8b;
-	padding: 7px 35px 0 0;
-}
-.centr-box button{
-	border: none;
-	height: 60px;
-	width: 260px;
-	padding-left: 10px; 
-	font: 37px 'Pangolin', sans-serif;
-	color: #ffffff;
-	background-color: #8FCDDC;
-}
+
+
 .bottom-box{
 	min-height: 285px;
 }
@@ -296,24 +205,20 @@ footer h4{
 	font: 18px 'Pangolin', sans-serif;
 	color: #ffffff;
 }
-@media all and (max-width:750px){
-.search-box{
-	margin-top: 60px;
-	margin-left: 20px;
+@media all and (max-width:750px) {
+
+
+	header .logo {
+		margin-left: 25px;
+	}
+
+	header .mob-nav {
+		margin-right: 25px;
+	}
+
+
 }
-.top-box{
-	height: 260px;
-}
-header .logo{
-	margin-left: 25px;
-}
-header .mob-nav{
-	margin-right: 25px;
-}
-.search-box form{
-	width: 340px;
-}
-.search-box form input{
-	width: 280px;
-}
-}
+
+
+
+
