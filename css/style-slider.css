@@ -6,6 +6,7 @@
 .swiper-slide {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+
 }
 
 *, *:before, *:after {
@@ -89,7 +90,7 @@
   line-height: 1.4;
   -webkit-transform: translateX(50px);
           transform: translateX(50px);
-  opacity: 0;
+  opacity: 5;
   -webkit-transition: opacity .3s ease, -webkit-transform .7s ease;
   transition: opacity .3s ease, -webkit-transform .7s ease;
   transition: opacity .3s ease, transform .7s ease;
