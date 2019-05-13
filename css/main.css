@@ -31,7 +31,7 @@ header .tel-navigation{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	font: 1.2rem 'Pangolin', sans-serif;
+	font: 1vw 'Pangolin', sans-serif;
 	background: rgba(116, 255, 198, 0.82);
 	color: #000000;
 	padding: 5px 5%;
@@ -69,7 +69,7 @@ header .logo-navigation .drop-list{
 	flex-direction: row;
 	justify-content: space-between;
 	flex-wrap: nowrap;
-	font: 2.5rem 'Pangolin', sans-serif;
+	font: 2vw 'Pangolin', sans-serif;
 	color: #000000;
 
 	padding-bottom: 7px;
