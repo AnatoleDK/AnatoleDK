@@ -89,6 +89,9 @@ header .logo-navigation .drop-list{
 .logo-navigation .drop-list a:hover{
 	color: #ffffff;
 }
+.slider-box{
+	margin-top: 27vh;
+}
 
 
 
@@ -119,7 +122,6 @@ header .logo-navigation .drop-list{
 	opacity: 1;
 	display: block;
 }
-
 ul li ul li {
 	clear: both;
 	width: 100%;
@@ -127,50 +129,19 @@ ul li ul li {
 
 
 
-
-
-
-
-
-header .logo-navigation .mob-nav{
-	display: none;
-	margin-right: 125px;
-	font: 27px 'Pangolin', sans-serif;
-	color: #ffffff;
-}
-.logo-navigation .mob-nav .btn-mob{
-	background-image: url(../img/Untitled-3-Recovered.png);
-	background-position: 1px -95px;
+.logo-navigation .btn-mob{
 	width: 60px;
 	height: 56px;
-	background-color: rgba(255, 255, 255, 0.300);
-	border: none;
-}
-.logo-navigation .mob-nav .drop-list-mob{
-	display: block;
-	padding: 0;
-    margin: 0;
-    list-style: none;
-    font-size: 18px;
-    position: absolute;
-	top: 55px;
-	right: 16px;
-}
-.logo-navigation .mob-nav li a{
-	display: inline-block;
-	font: 22px 'Pangolin', sans-serif;
-	color: #B7B7B7;
-	text-decoration: none;
-	padding-top: 10px;
-}
-.hidden{
-	 display: none;
+	background-color: rgb(19, 33, 255);
+	display: none;
 }
 
-.ddd{
 
-	margin-top: 27vh;
-}
+/*start btn mob*/
+
+
+
+/* end btn mob*/
 
 
 
@@ -215,15 +186,40 @@ footer h4{
 	font: 18px 'Pangolin', sans-serif;
 	color: #ffffff;
 }
-@media all and (max-width:750px) {
 
 
-	header .logo {
-		margin-left: 25px;
+
+@media all and (max-width:749px) {
+
+
+
+	.logo-navigation .btn-mob{
+		display: inline-block;
 	}
 
-	header .mob-nav {
-		margin-right: 25px;
+	/*header .navigation-menu {
+		display: none;
+	}*/
+
+	.logo-navigation .navigation-menu .drop-list{
+		display: block;
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		font-size: 18px;
+		position: absolute;
+		/*top: 55px;
+		right: 16px;*/
+	}
+	.logo-navigation li a{
+		display: inline-block;
+		font: 22px 'Pangolin', sans-serif;
+		color: #B7B7B7;
+		text-decoration: none;
+		padding-top: 10px;
+	}
+	.hidden {
+		display: none;
 	}
 
 
