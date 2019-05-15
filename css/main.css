@@ -71,7 +71,7 @@ header .logo-navigation .logo-img {
     background-size: cover;
 }
 header .logo-navigation .navigation-menu{
-	width: 80%;
+	width: 70vw;
 }
 header .logo-navigation .drop-list{
 	display: flex;
