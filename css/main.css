@@ -34,11 +34,12 @@ header .tel-navigation{
 	justify-content: space-between;
 	background: rgba(116, 255, 198, 0.82);
 	padding: 5px 5%;
+	align-items: center;
 }
 header .tel-navigation a{
     font: 1.1vw 'Pangolin', sans-serif;
     color: #000000;
-    padding: 0 10px;
+    padding: 5px 10px;
 }
 header .tel-navigation .tel-list {
 	display: flex;
@@ -49,13 +50,12 @@ header .tel-navigation .tel-list {
 header .tel-navigation .tel-list{
 	color: #000000;
 }
-.fa{ font-size: 1.5vw;
-    padding-right: 10px;
+header .fa{
+	font-size: 1.2vw;
 }
-
-
 header .logo-navigation{
 	display: flex;
+	position: relative;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
@@ -80,7 +80,6 @@ header .logo-navigation .logo-img {
 	flex-wrap: nowrap;
 	font: 2vw 'Pangolin', sans-serif;
 	color: #000000;
-
 	padding-bottom: 7px;
 }
 .logo-navigation .drop-list a{
@@ -199,13 +198,27 @@ footer h4{
 	/*header .navigation-menu {
 		display: none;
 	}*/
+	header .tel-navigation{
+		display: block;
+	}
+	header .tel-navigation a {
+		font: 1.9vw 'Pangolin', sans-serif;
+		display: inline-block;
+	}
+	header .fa{
+		font-size: 2.5vw;
+		padding-right: 0;
+	}
+	header .fa-instagram .fa-facebook{
+		font-size: 4vw;
+	}
 	header .logo-navigation .navigation-menu{
 		width: 0;
 	}
 	.logo-navigation .navigation-menu .drop-list{
 		display: block;
 		position: absolute;
-		top: 166px;
+		top: 146px;
 		right: 0;
 		text-align: center;
 		/*padding: 10px 10px;*/
@@ -215,10 +228,12 @@ footer h4{
 		width: 100%;
 		height: 300%;
 		background: rgba(116, 255, 198, 0.650);
+		overflow: hidden;
 		/*width: 50%;*/
 	}
 	.logo-navigation .navigation-menu .drop-list li{
 		margin-top: 17px ;
+		overflow: hidden;
 	}
 	.navigation-menu .drop-list li ul{
 		text-align: center;
@@ -240,10 +255,7 @@ footer h4{
 		display: none;
 	}
 /*button transform*/
-	.btn-wrapper{
-		display: inline-block;
-		float: right;
-	}
+
 	.btn-mob {
 		display: inline-block;
 		width: 50px;
