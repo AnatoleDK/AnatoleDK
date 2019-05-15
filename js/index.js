@@ -87,7 +87,16 @@ var navSlider = new Swiper(navSliderSelector, navSliderOptions);
 mainSlider.controller.control = navSlider;
 navSlider.controller.control = mainSlider;
 
-$('.btn-mob').on('click', function(e) {
-    e.preventDefault;
-    $(this).toggleClass('btn-mob_active');
+//button
+$('.btn-mob').on('click', function() {
+     $(this).toggleClass('btn-mob_active');
 });
+
+
+    let btn = document.querySelector('.btn-mob');
+    let list = document.querySelector('.navigation-menu');
+    btn.addEventListener('click', function(){
+        list.classList.toggle('hidden');
+    });
+
+//button

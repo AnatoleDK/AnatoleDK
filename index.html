@@ -25,7 +25,7 @@
 
 			<div class="logo-navigation">
 				<div class="logo-img"></div>
-                <div class="btn-mob"><span></span></div>
+                <div><div class="btn-mob"><span></span></div>
 				<nav class="navigation-menu hidden">
 					<ul class="drop-list ">
 						<li><a href="#">Главная</a></li>
@@ -52,7 +52,7 @@
 						<li><a href="#">Партнеры</a></li>
                         <li><a href="#">Контакты</a></li>
 					</ul>
-				</nav>
+				</nav></div>
             </div>
 		</header>
 
@@ -223,28 +223,29 @@
 			</nav>
 		</div>
 		<footer>
-			<h4>Copyright © 2013 Css Author</h4>
+			<h4>Copyright © 2019  Author</h4>
 		</footer>
 	</div>
 
-	<script type="text/javascript">
-		window.onload = function(){
-		let btn = document.querySelector('.btn-mob');
-		let list = document.querySelector('.navigation-menu');
-		btn.addEventListener('click', function(){
-		list.classList.toggle('hidden');
-		});
-		}
-	</script>
+	<!--<script type='text/javascript'>
+        $('.btn-mob').on('click', function(e) {
+            e.preventDefault;
+            $(this).toggleClass('btn-mob_active');
+        });
 
+        window.onload = function(){
+            let btn = document.querySelector('.btn-mob');
+            let list = document.querySelector('.navigation-menu');
+            btn.addEventListener('click', function(){
+                list.classList.toggle('hidden');
+            });
+        }
+	</script>-->
 
 
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
-
-    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-
-	<script  src="js/index.js"></script>
+    <script  src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+	<script  src='js/index.js'></script>
 
 
 

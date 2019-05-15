@@ -190,11 +190,8 @@ footer h4{
 }
 
 
-
+/*media*/
 @media all and (max-width:749px) {
-
-
-
 	/*.logo-navigation .btn-mob{
 		display: inline-block;
 	}*/
@@ -202,37 +199,37 @@ footer h4{
 	/*header .navigation-menu {
 		display: none;
 	}*/
-
 	.logo-navigation .navigation-menu .drop-list{
 		display: block;
-		padding: 0;
-		margin: 0;
+		position: absolute;
+		top: 167px;
+		right: 263px;
+		/*padding: 10px 10px;*/
+		/*margin: 170px;*/
 		list-style: none;
 		font-size: 18px;
-		position: absolute;
-		/*top: 55px;
-		right: 16px;*/
+		width: 50vw;
+		height: 100vh;
+
+		background: rgba(116, 255, 198, 0.50);
+		/*width: 50%;*/
 	}
-	.logo-navigation li a{
+	/*.logo-navigation li a{
 		display: inline-block;
 		font: 22px 'Pangolin', sans-serif;
 		color: #B7B7B7;
 		text-decoration: none;
 		padding-top: 10px;
-	}
+	}*/
 	.hidden {
 		display: none;
 	}
-
-
-
-
-
+/*button transform*/
 	.btn-mob {
-		display: inline-block;
+		display: block;
 		width: 50px;
 		height: 50px;
-		background-color: #1321ff;
+		background: rgba(116, 255, 198, 0.82);
 		border-radius: 20%;
 		position: relative;
 	}
@@ -244,7 +241,7 @@ footer h4{
 		left: 50%; margin-left: -10px;
 		width: 20px;
 		height: 2px;
-		background-color: #ffef25;
+		background-color: #ffffff;
 	}
 	.btn-mob span::before,
 	.btn-mob span::after {
@@ -258,21 +255,15 @@ footer h4{
 	.btn-mob span::after {
 		transform: translateY(5px);
 	}
-
-
-
-	.btn-mob_active span{
+	.btn-mob_active span {
 		height: 0;
 	}
 	.btn-mob_active span:before {
 		transform: rotate(45deg);
-
 	}
-
 	.btn-mob_active span:after {
 		transform: rotate(-45deg);
-
 	}
-
-
+	/*button transform*/
 }
+/*media*/
