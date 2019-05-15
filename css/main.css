@@ -84,6 +84,7 @@ header .logo-navigation .logo-img {
 }
 .logo-navigation .drop-list a{
 	color: #000000;
+	font: 2.1vw 'Pangolin', sans-serif;
 }
 .logo-navigation .drop-list a:hover{
 	color: #ffffff;
@@ -210,7 +211,7 @@ footer h4{
 		padding-right: 0;
 	}
 	header .fa-instagram .fa-facebook{
-		font-size: 4vw;
+		font-size: 4.2vw;
 	}
 	header .logo-navigation .navigation-menu{
 		width: 0;
@@ -221,15 +222,14 @@ footer h4{
 		top: 101%;
 		right: 0;
 		text-align: center;
-		/*padding: 10px 10px;*/
-		/*margin: 170px;*/
 		list-style: none;
-		font-size: 18px;
 		width: 100%;
 		height: 300%;
-		background: rgba(116, 255, 198, 0.650);
-		overflow: hidden;
-		/*width: 50%;*/
+		background: rgba(116, 255, 198, 0.750);
+	}
+	.logo-navigation .drop-list a{
+		font: 4vw 'Pangolin', sans-serif;
+		font-weight: bold;
 	}
 	.logo-navigation .navigation-menu .drop-list li{
 		margin-top: 17px ;
@@ -241,8 +241,9 @@ footer h4{
 		position: relative;
 		background: rgba(255, 255, 255, 0.25);
 	}
-	.navigation-menu .drop-list li ul li{
+	.navigation-menu .drop-list ul li a{
 		background: rgba(255, 255, 255, 0.25);
+		font: 2.9vw 'Pangolin', sans-serif;
 	}
 	/*.logo-navigation li a{
 		display: inline-block;

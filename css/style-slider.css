@@ -42,7 +42,7 @@
   width: 100%;
 }
 .swiper-container.nav-slider .swiper-slide .content .title {
-  font-size: 20px;
+  font-size: 1.1vw;
 }
 .swiper-container:hover .swiper-button-prev,
 .swiper-container:hover .swiper-button-next {
@@ -80,13 +80,13 @@
   color: rgba(0, 0, 0, 0.91);
 }
 .swiper-slide .content .title {
-  font-size: 2.8vw;
+  font-size: 2.5vw;
   font-weight: bold;
   margin-bottom: 30px;
 }
 .swiper-slide .content .caption {
   display: block;
-  font-size: 1.7vw;
+  font-size: 1.5vw;
   font-weight: bold;
   line-height: 1.4;
   -webkit-transform: translateX(50px);
@@ -117,4 +117,14 @@
 .swiper-button-next {
   -webkit-transform: translateX(-50px);
           transform: translateX(-50px);
+}
+/*media*/
+@media all and (max-width:749px) {
+    .swiper-slide .content .title {
+        font-size: 5.2vw;
+    }
+    .swiper-slide .content .caption {
+        display: block;
+        font-size: 3.7vw;
+    }
 }
