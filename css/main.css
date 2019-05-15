@@ -70,10 +70,10 @@ header .logo-navigation .logo-img {
     background-position: center;
     background-size: cover;
 }
-header .logo-navigation .navigation-menu{
+.logo-navigation .navigation-menu{
 	width: 70vw;
 }
-header .logo-navigation .drop-list{
+.logo-navigation .drop-list{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -199,6 +199,9 @@ footer h4{
 	/*header .navigation-menu {
 		display: none;
 	}*/
+	header .logo-navigation .navigation-menu{
+		width: 0;
+	}
 	.logo-navigation .navigation-menu .drop-list{
 		display: block;
 		position: absolute;
@@ -237,8 +240,12 @@ footer h4{
 		display: none;
 	}
 /*button transform*/
+	.btn-wrapper{
+		display: inline-block;
+		float: right;
+	}
 	.btn-mob {
-		display: block;
+		display: inline-block;
 		width: 50px;
 		height: 50px;
 		background: rgba(116, 255, 198, 0.82);
