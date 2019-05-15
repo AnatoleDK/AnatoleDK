@@ -86,3 +86,8 @@ var navSlider = new Swiper(navSliderSelector, navSliderOptions);
 // Matching sliders
 mainSlider.controller.control = navSlider;
 navSlider.controller.control = mainSlider;
+
+$('.btn-mob').on('click', function(e) {
+    e.preventDefault;
+    $(this).toggleClass('btn-mob_active');
+});

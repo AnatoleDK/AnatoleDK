@@ -129,12 +129,14 @@ ul li ul li {
 
 
 
+/*
 .logo-navigation .btn-mob{
 	width: 60px;
 	height: 56px;
 	background-color: rgb(19, 33, 255);
 	display: none;
 }
+*/
 
 
 /*start btn mob*/
@@ -193,9 +195,9 @@ footer h4{
 
 
 
-	.logo-navigation .btn-mob{
+	/*.logo-navigation .btn-mob{
 		display: inline-block;
-	}
+	}*/
 
 	/*header .navigation-menu {
 		display: none;
@@ -220,6 +222,56 @@ footer h4{
 	}
 	.hidden {
 		display: none;
+	}
+
+
+
+
+
+	.btn-mob {
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		background-color: #1321ff;
+		border-radius: 20%;
+		position: relative;
+	}
+	.btn-mob span,
+	.btn-mob span::before,
+	.btn-mob span::after {
+		position: absolute;
+		top: 50%; margin-top: -1px;
+		left: 50%; margin-left: -10px;
+		width: 20px;
+		height: 2px;
+		background-color: #ffef25;
+	}
+	.btn-mob span::before,
+	.btn-mob span::after {
+		content: '';
+		display: block;
+		transition: 0.2s;
+	}
+	.btn-mob span::before {
+		transform: translateY(-5px);
+	}
+	.btn-mob span::after {
+		transform: translateY(5px);
+	}
+
+
+
+	.btn-mob_active span{
+		height: 0;
+	}
+	.btn-mob_active span:before {
+		transform: rotate(45deg);
+
+	}
+
+	.btn-mob_active span:after {
+		transform: rotate(-45deg);
+
 	}
 
 
