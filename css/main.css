@@ -218,7 +218,7 @@ footer h4{
 	.logo-navigation .navigation-menu .drop-list{
 		display: block;
 		position: absolute;
-		top: 146px;
+		top: 101%;
 		right: 0;
 		text-align: center;
 		/*padding: 10px 10px;*/
