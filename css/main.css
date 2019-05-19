@@ -197,7 +197,28 @@ ul li ul li {
 h3{
 	text-align: center;
 }
+/*
+map
+*/
+.address-box{
+	display: flex;
+}
+.wrapper .address-box .map-box {
+	display: inline-block;
+	width: 50vw;
+	height: 50vh;
 
+}
+/*.wrapper .address-box .map-box iframe{
+	display: inline-block;
+	width: 45%;*/
+
+
+.wrapper .address-box .address{
+	display: inline-block;
+	width: 48vw;
+
+}
 footer{
 	position: relative;
 	height: 65px;
