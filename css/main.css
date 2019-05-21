@@ -29,7 +29,7 @@ header{
 	left: 0;
 	background: #ffffff;
 	z-index: 5;
-	min-height: 26vh;
+	min-height: 24vh;
 }
 header .tel-navigation{
 	display: flex;
@@ -42,13 +42,13 @@ header .tel-navigation{
 header .tel-navigation a, .address-box .address, .address-box .address a {
     font: 1.1vw 'Pangolin', sans-serif;
     color: #000000;
-    padding: 5px 5px;
+    padding: 5px 10px;
 }
 header .tel-navigation .tel-list {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 60%;
+	width: 45%;
 }
 header .tel-navigation .tel-list{
 	color: #000000;
@@ -92,7 +92,7 @@ header .logo-navigation .logo-img {
 
 .slider-box{
 	display: block;
-	margin-top: 27vh;
+	margin-top: 25vh;
 	position: relative;
 	width: 100%;
 	height: 81vh;
@@ -137,19 +137,20 @@ ul li ul li {
 .main-box-wrapper{
 	position: relative;
 	width: 100vw;
-	height: 99vh;
-	background: brown;
+	height: 97vh;
 	color: #000000;
 	font: 1.1vw 'Pangolin', sans-serif;
 }
-
+.main-box-wrapper .main-box p{
+	padding: 3vh 3vw;
+}
 
 
 .main-box-wrapper .main-box{
 	position: relative;
 	width: 100vw;
 	height: 97vh;
-	background: #ff029d;
+
 }
 
 
@@ -160,7 +161,7 @@ ul li ul li {
 	left: 0;
 	width: 55vw;
 	height: 34vh;
-	background: gold;
+	background: rgba(116, 255, 198, 0.82);
 }
 
 
@@ -170,7 +171,7 @@ ul li ul li {
 	right: 14px;
 	width: 49vw;
 	height: 30vh;
-	background: #7B7777;
+	background: rgba(116, 255, 198, 0.82);
 }
 
 
@@ -180,7 +181,7 @@ ul li ul li {
 	left: 5vh;
 	width: 40vw;
 	height: 55vh;
-	background: springgreen;
+	background: rgba(116, 255, 198, 0.82);
 }
 
 .video-box{
@@ -189,7 +190,7 @@ ul li ul li {
 	right: 5vw;
 	width: 48vw;
 	height: 52vh;
-	background: rgba(0, 0, 0, 0.84);
+	background: rgba(116, 255, 198, 0.82);
 }
 .video-box div{
 	display: flex;
