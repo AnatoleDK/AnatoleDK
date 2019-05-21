@@ -12,12 +12,15 @@ body{
 	width: 100%;
 	height: 100%;
 	font: 10px 'Pangolin', sans-serif, cursive;
-	color: #8b8b8b;
+	color: #000000;
 	background: rgba(116, 255, 198, 0.38);
 }
 .wrapper{
 	width: 100%;
 	height: 100%;
+}
+body .wrapper a:hover{
+	color: #ffffff;
 }
 header{
     position: fixed;
@@ -39,7 +42,7 @@ header .tel-navigation{
 header .tel-navigation a, .address-box .address, .address-box .address a {
     font: 1.1vw 'Pangolin', sans-serif;
     color: #000000;
-    padding: 5px 10px;
+    padding: 5px 5px;
 }
 header .tel-navigation .tel-list {
 	display: flex;
@@ -86,9 +89,7 @@ header .logo-navigation .logo-img {
 	color: #000000;
 	font: 2.1vw 'Pangolin', sans-serif;
 }
-.logo-navigation .drop-list a:hover{
-	color: #ffffff;
-}
+
 .slider-box{
 	display: block;
 	margin-top: 27vh;
@@ -184,21 +185,24 @@ ul li ul li {
 
 .video-box{
 	position: absolute;
-	display: flex;
 	bottom: 4vh;
 	right: 5vw;
 	width: 48vw;
 	height: 52vh;
-	flex-direction: row;
-	flex-wrap: wrap;
-	Justify-content: space-between;
 	background: rgba(0, 0, 0, 0.84);
 }
-h3{
+.video-box div{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+h2, h3{
 	text-align: center;
+	font: 1.6vw 'Pangolin', sans-serif;
+	padding: 5px 5px;
 }
 /*
-map
+map and address
 */
 .address-box{
 	display: flex;
@@ -213,9 +217,13 @@ map
 .wrapper .address-box .address{
 	display:flex;
 	flex-direction: row;
+	flex-wrap: nowrap;
 	justify-content: space-around;
 	width: 48vw;
 	padding: 15px 15px;
+}
+.address-box .address ul li{
+	padding: 5px 5px;
 }
 footer{
 	position: relative;
@@ -229,28 +237,26 @@ footer{
 	align-content: center;
 	justify-content: center;
 }
-footer h4{
-	font: 18px 'Pangolin', sans-serif;
-	color: #ffffff;
-}
-
 
 /*media*/
-@media all and (max-width:749px) {
+@media all and (max-width:749px){
 
 	header .tel-navigation{
 		display: block;
 	}
-	header .tel-navigation a {
+	header .tel-navigation a{
 		font: 1.9vw 'Pangolin', sans-serif;
 		display: inline-block;
 	}
-	header .fa{
-		font-size: 2.2vw;
+	.address-box .address ul li, .address-box .address a{
+		font: 3vw 'Pangolin', sans-serif;
+	}
+	.wrapper .fa{
+		font-size: 3vw;
 		padding-right: 0;
 	}
-	header .fa-instagram .fa-facebook{
-		font-size: 4.2vw;
+	.wrapper .fa-instagram .fa-facebook{
+		font-size: 4.5vw;
 	}
 	header .logo-navigation .navigation-menu{
 		width: 0;
@@ -293,6 +299,22 @@ footer h4{
 	}*/
 	.hidden {
 		display: none;
+	}
+	.address-box{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.wrapper .address-box .map-box {
+
+		width: 100vw;
+
+
+
+	}
+	.wrapper .address-box .address{
+
+		width: 100vw;
+
 	}
 /*button transform*/
 
