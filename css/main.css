@@ -150,38 +150,43 @@ ul li ul li {
 	position: relative;
 	width: 100vw;
 	height: 97vh;
-
 }
 
 
 
-.main-box-wrapper .main-box .about-us{
+ .main-box .about-us{
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 55vw;
 	height: 34vh;
-	background: rgba(116, 255, 198, 0.82);
+	 background: rgba(157, 255, 208, 0.75);
+	 box-shadow: 12px 12px 10px rgb(214, 214, 214);
+	border-radius: 2%;
 }
 
 
-.main-box-wrapper .main-box .our-philosophy{
+ .main-box .our-philosophy{
 	position: absolute;
-	top: 11vh;
+	top: 5vh;
 	right: 14px;
-	width: 49vw;
-	height: 30vh;
-	background: rgba(116, 255, 198, 0.82);
+	width: 41vw;
+	height: 33vh;
+	 background: rgba(157, 255, 208, 0.75);
+	 box-shadow: 12px 12px 10px rgb(214, 214, 214);
+	border-radius: 2%;
 }
 
 
-.main-box-wrapper .main-box .reviews{
+.main-box .reviews{
 	position: absolute;
 	bottom: 0;
 	left: 5vh;
 	width: 40vw;
 	height: 55vh;
-	background: rgba(116, 255, 198, 0.82);
+	background: rgba(157, 255, 208, 0.75);
+	box-shadow: 12px 12px 10px rgb(214, 214, 214);
+	border-radius: 2%;
 }
 
 .video-box{
@@ -190,12 +195,22 @@ ul li ul li {
 	right: 5vw;
 	width: 48vw;
 	height: 52vh;
-	background: rgba(116, 255, 198, 0.82);
+	background: rgba(157, 255, 208, 0.75);
+	box-shadow: 12px 12px 10px rgb(214, 214, 214);
+	border-radius: 2%;
+
 }
 .video-box div{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	width: 100%;
+	height: 40vh;
+}
+.video-box div div{
+	width: 50%;
+	height: 45vh;
+	padding: 5px 5px;
 }
 h2, h3{
 	text-align: center;
@@ -207,6 +222,8 @@ map and address
 */
 .address-box{
 	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 .wrapper .address-box .map-box {
 	display: inline-block;
@@ -301,10 +318,63 @@ footer{
 	.hidden {
 		display: none;
 	}
-	.address-box{
-		flex-direction: row;
-		flex-wrap: wrap;
+
+	.wrapper .main-box-wrapper{
+		height: auto;
 	}
+	.wrapper .main-box-wrapper .main-box{
+		height: auto;
+	}
+	.main-box-wrapper .main-box .about-us {
+		display: block;
+		position: relative;
+		width: 100%;
+		height: auto;
+		margin-bottom: 5px;
+
+	}
+	.main-box-wrapper .main-box .our-philosophy {
+		display: block;
+		position: relative;
+		width: 100%;
+		top: 0;
+		right: 0;
+		height: auto;
+		margin-bottom: 5px;
+
+	}
+	.main-box .reviews {
+		display: block;
+		position: relative;
+		width: 100%;
+		left: 0;
+		height: auto;
+		margin-bottom: 5px;
+	}
+
+	.video-box{
+		display: block;
+		position: relative;
+		width: 100%;
+		bottom: 0;
+		right: 0;
+		height: auto;
+		margin-bottom: 5px;
+
+
+	}
+	.video-box div, .video-box div div{
+		width: 100%;
+		height:40vh;
+		padding: auto;
+	}
+
+
+
+
+
+
+
 	.wrapper .address-box .map-box {
 
 		width: 100vw;
