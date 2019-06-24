@@ -433,6 +433,8 @@ footer{
 	.wrapper .slider-box .nav-slider {
 		display: none;
 	}
-
+	.swiper-container {
+		width: 100%;
+	}
 }
 /*media*/
