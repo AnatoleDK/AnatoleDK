@@ -13,11 +13,13 @@ body{
 	height: 100%;
 	font: 10px 'Pangolin', sans-serif, cursive;
 	color: #000000;
+
 	background: rgba(116, 255, 198, 0.38);
 }
 .wrapper{
 	width: 100%;
 	height: 100%;
+	background-image: url(../img/leafe16496371.gif);
 }
 body .wrapper a:hover{
 	color: #ffffff;
@@ -139,7 +141,7 @@ ul li ul li {
 	width: 100vw;
 	height: 97vh;
 	color: #000000;
-	font: 1.1vw 'Pangolin', sans-serif;
+	font: 2.5vh 'Pangolin', sans-serif;
 }
 .main-box-wrapper .main-box p{
 	padding: 3vh 3vw;
@@ -214,7 +216,7 @@ ul li ul li {
 }
 h2, h3{
 	text-align: center;
-	font: 1.6vw 'Pangolin', sans-serif;
+	font: 2.5vh 'Pangolin', sans-serif;
 	padding: 5px 5px;
 }
 /*
@@ -331,7 +333,6 @@ footer{
 		width: 100%;
 		height: auto;
 		margin-bottom: 5px;
-
 	}
 	.main-box-wrapper .main-box .our-philosophy {
 		display: block;
@@ -358,7 +359,7 @@ footer{
 		width: 100%;
 		bottom: 0;
 		right: 0;
-		height: auto;
+		height: 87vh;
 		margin-bottom: 5px;
 
 
@@ -370,16 +371,9 @@ footer{
 	}
 
 
-
-
-
-
-
 	.wrapper .address-box .map-box {
 
 		width: 100vw;
-
-
 
 	}
 	.wrapper .address-box .address{
