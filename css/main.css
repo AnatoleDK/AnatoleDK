@@ -67,6 +67,7 @@ header .logo-navigation{
 	background: rgba(116, 255, 198, 0.38);
 	border-bottom: 3px solid rgba(116, 255, 198, 0.82);
 	padding: 5px 5%;
+	background-image: url(../img/leafe1649637771.gif);
 }
 header .logo-navigation .logo-img {
 	background-image: url(../img/Logo.png);
@@ -283,8 +284,8 @@ footer{
 	}
 	header .logo-navigation .logo-img {
 		background-image: url(../img/Logo.png);
-		width: 60px;
-		height: 60px;
+		width: 80px;
+		height: 80px;
 
 	}
 	.logo-navigation .navigation-menu .drop-list{
