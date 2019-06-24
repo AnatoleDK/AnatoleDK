@@ -281,6 +281,12 @@ footer{
 	header .logo-navigation .navigation-menu{
 		width: 0;
 	}
+	header .logo-navigation .logo-img {
+		background-image: url(../img/Logo.png);
+		width: 60px;
+		height: 60px;
+
+	}
 	.logo-navigation .navigation-menu .drop-list{
 		display: block;
 		position: absolute;
@@ -423,5 +429,10 @@ footer{
 		transform: rotate(-45deg);
 	}
 	/*button transform*/
+
+	.wrapper .slider-box .nav-slider {
+		display: none;
+	}
+
 }
 /*media*/
