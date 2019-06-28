@@ -109,6 +109,7 @@ header .logo-navigation .logo-img {
 .navigation-menu li:hover {
 	cursor: pointer;
 	background: rgba(116, 255, 198, 0.82);
+    transition: all 0.2s ease;
 }
 .navigation-menu ul li{
 	position: relative;
@@ -134,7 +135,18 @@ ul li ul li {
 	width: 100%;
 }
 
-
+.sale {
+    position: absolute;
+    display: inline-block;
+    background-image: url(../img/436832_small6.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 21%;
+    height: 31%;
+    top: 33px;
+    left: 30px;
+    opacity: 5;
+}
 
 .main-box-wrapper{
 	position: relative;
