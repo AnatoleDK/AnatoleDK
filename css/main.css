@@ -135,17 +135,16 @@ ul li ul li {
 	width: 100%;
 }
 
-.sale {
-    position: absolute;
-    display: inline-block;
+.slider-box .sale {
     background-image: url(../img/436832_small6.jpg);
-    background-position: center;
-    background-size: cover;
-    width: 21%;
-    height: 31%;
-    top: 33px;
-    left: 30px;
-    opacity: 5;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 35%;
+    top: 11%;
+    left: 5%;
+    background-position: 50% 50%;
 }
 
 .main-box-wrapper{

@@ -9,6 +9,7 @@
   position: relative;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+    overflow: hidden;
 
 }
 
@@ -82,7 +83,7 @@
 .swiper-slide .content .title {
   font-size: 2.5vw;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 2%;
 }
 .swiper-slide .content .caption {
   display: block;
