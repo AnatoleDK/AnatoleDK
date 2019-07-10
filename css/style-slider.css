@@ -2,30 +2,26 @@
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
-
 .swiper-slide {
   height: 100%;
   width: 100%;
   position: relative;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-    overflow: hidden;
-
+  overflow: hidden;
 }
-
 *, *:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 .swiper-container {
   width: 80%;
   height: 80vh;
   float: left;
   -webkit-transition: opacity .6s ease, -webkit-transform .3s ease;
-   transition: opacity .6s ease, transform .3s ease,
+   transition: opacity .6s ease, transform .3s ease;
 }
 .swiper-container.nav-slider {
   width: 20%;
@@ -44,7 +40,7 @@
   width: 100%;
 }
 .swiper-container.nav-slider .swiper-slide .content .title {
-  font-size: 15px;
+  font-size: 1rem;
 }
 .swiper-container:hover .swiper-button-prev,
 .swiper-container:hover .swiper-button-next {
@@ -57,7 +53,6 @@
   opacity: 0;
   visibility: hidden;
 }
-
 .swiper-slide {
   overflow: hidden;
 }
@@ -70,7 +65,6 @@
   background-position: center;
   background-size: cover;
  }
-
 .swiper-slide .content {
   position: absolute;
   bottom: 0;
@@ -81,13 +75,13 @@
   background: rgba(254, 254, 254, 0.37);
 }
 .swiper-slide .content .title {
-  font-size: 2.5vw;
+  font-size: 1.3rem;
   font-weight: bold;
   margin-bottom: 2%;
 }
 .swiper-slide .content .caption {
   display: block;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: bold;
   line-height: 1.4;
   padding-bottom: 8px;
@@ -98,30 +92,16 @@
           transform: translateX(0);
   opacity: 1;
 }
-
 [class^="swiper-button-"] {
   width: 44px;
   opacity: 0;
   visibility: hidden;
 }
-
 .swiper-button-prev {
   -webkit-transform: translateX(50px);
           transform: translateX(50px);
 }
-
 .swiper-button-next {
   -webkit-transform: translateX(-50px);
           transform: translateX(-50px);
 }
-/*media
-@media all and (max-width:749px) {
-    .swiper-slide .content .title {
-        font-size: 5.2vw;
-    }
-    .swiper-slide .content .caption {
-        display: block;
-        font-size: 3.7vw;
-    }
-}
-*/

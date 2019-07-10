@@ -5,13 +5,11 @@
 *{
 	box-sizing:border-box;
 }
-html {
-	font: 10px 'Pangolin', sans-serif, cursive;
-	}
+
 body{
 	width: 100%;
 	height: 100%;
-	font: 10px 'Pangolin', sans-serif, cursive;
+	font: calc(1vw + 1vh + .5vmin) 'Pangolin', sans-serif, cursive;
 	color: #000000;
 	background: rgba(116, 255, 198, 0.38);
 }
@@ -40,8 +38,8 @@ header .tel-navigation{
 	padding: 5px 5%;
 	align-items: center;
 }
-header .tel-navigation a, .address-box .address, .address-box .address a {
-    font: 1.1vw 'Pangolin', sans-serif;
+header .tel-navigation a, .address, .address a {
+    font: 1rem 'Pangolin', sans-serif;
     color: #000000;
     padding: 5px 10px;
 }
@@ -50,12 +48,10 @@ header .tel-navigation .tel-list {
 	flex-direction: row;
 	justify-content: space-between;
 	width: 45%;
-}
-header .tel-navigation .tel-list{
 	color: #000000;
 }
 header .fa{
-	font-size: 1.2vw;
+	font-size: 1rem;
 }
 header .logo-navigation{
 	display: flex;
@@ -83,25 +79,14 @@ header .logo-navigation .logo-img {
 	flex-direction: row;
 	justify-content: space-between;
 	flex-wrap: nowrap;
-	font: 2vw 'Pangolin', sans-serif;
+	font: 1rem 'Pangolin', sans-serif;
 	color: #000000;
 	padding-bottom: 7px;
 }
 .logo-navigation .drop-list a{
 	color: #000000;
-	font: 2.1vw 'Pangolin', sans-serif;
+	font: 1.5rem 'Pangolin', sans-serif;
 }
-
-.slider-box{
-	display: block;
-	margin-top: 25vh;
-	position: relative;
-	width: 100%;
-	height: 81vh;
-}
-
-
-
 .navigation-menu li {
 	display: block;
 	transition-duration: 0.5s;
@@ -118,23 +103,30 @@ header .logo-navigation .logo-img {
 	visibility: hidden;
 	opacity: 0;
 	position: absolute;
-	transition: all 0.5s ease;
-	left: 0;
-	display: none;
+	transition: all 3s ease;
+	left: 400px;
 	width: 20vw;
-	background: rgba(116, 255, 198, 0.82);
-}
+	background: rgba(116, 255, 198, 0.91);
+	}
 .navigation-menu ul li:hover > ul,
 .navigation-menu ul li ul:hover {
 	visibility: visible;
 	opacity: 1;
 	display: block;
+	left: 0;
 }
 ul li ul li {
+	padding: 3px 6px;
 	clear: both;
 	width: 100%;
 }
-
+.slider-box{
+	display: block;
+	margin-top: 25vh;
+	position: relative;
+	width: 100%;
+	height: 81vh;
+}
 .slider-box .sale {
     background-image: url(../img/436832_small6.jpg);
     position: absolute;
@@ -147,70 +139,68 @@ ul li ul li {
     background-position: 50% 50%;
 }
 
-.main-box-wrapper{
-	position: relative;
+.main-content-wrapper{
+    position: relative;
 	width: 100vw;
-	height: 97vh;
 	color: #000000;
-	font: 2.5vh 'Pangolin', sans-serif;
+	font: 1rem 'Pangolin', sans-serif;
 }
-.main-box-wrapper .main-box p{
+.main-content-wrapper p{
 	padding: 3vh 3vw;
 }
 
 
-.main-box-wrapper .main-box{
-	position: relative;
+.top-content-box, .bottom-content-box{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 	width: 100vw;
-	height: 97vh;
+	margin-bottom: 1%;
+	margin-top: 1%;
 }
 
 
 
- .main-box .about-us{
-	position: absolute;
-	top: 0;
-	left: 0;
+.about-us{
+
+	align-self: flex-start;
 	width: 55vw;
-	height: 34vh;
-	 background: rgba(157, 255, 208, 0.75);
-	 box-shadow: 12px 12px 10px rgb(214, 214, 214);
-	border-radius: 2%;
-}
 
-
- .main-box .our-philosophy{
-	position: absolute;
-	top: 5vh;
-	right: 14px;
-	width: 41vw;
-	height: 33vh;
-	 background: rgba(157, 255, 208, 0.75);
-	 box-shadow: 12px 12px 10px rgb(214, 214, 214);
-	border-radius: 2%;
-}
-
-
-.main-box .reviews{
-	position: absolute;
-	bottom: 0;
-	left: 5vh;
-	width: 40vw;
-	height: 55vh;
 	background: rgba(157, 255, 208, 0.75);
 	box-shadow: 12px 12px 10px rgb(214, 214, 214);
 	border-radius: 2%;
+	margin-left: 2%;
+}
+
+
+.our-philosophy{
+	align-self: flex-end;
+    /*margin: 3vh 2vw 5vh 2vw;*/
+	width: 41vw;
+	/*height: 33vh;*/
+	 background: rgba(157, 255, 208, 0.75);
+	 box-shadow: 12px 12px 10px rgb(214, 214, 214);
+	border-radius: 2%;
+}
+
+
+.reviews{
+
+	width: 40vw;
+	/*height: 55vh;*/
+	background: rgba(157, 255, 208, 0.75);
+	box-shadow: 12px 12px 10px rgb(214, 214, 214);
+	overflow: scroll;
 }
 
 .video-box{
-	position: absolute;
-	bottom: 4vh;
-	right: 5vw;
+
 	width: 48vw;
-	height: 52vh;
+
 	background: rgba(157, 255, 208, 0.75);
 	box-shadow: 12px 12px 10px rgb(214, 214, 214);
 	border-radius: 2%;
+	margin-right: 4%;
 
 }
 .video-box div{
@@ -222,30 +212,35 @@ ul li ul li {
 }
 .video-box div div{
 	width: 50%;
-	height: 45vh;
 	padding: 5px 5px;
 }
 h2, h3{
 	text-align: center;
-	font: 2.5vh 'Pangolin', sans-serif;
+	font: 1rem 'Pangolin', sans-serif;
 	padding: 5px 5px;
 }
 /*
 map and address
 */
+.address-box-wrapper{
+display: block;
+    position: relative;
+    height: auto;
+}
 .address-box{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+
 }
-.wrapper .address-box .map-box {
+.address-box .map-box {
 	display: inline-block;
 	width: 50vw;
 	height: 50vh;
 	padding: 15px 15px;
 
 }
-.wrapper .address-box .address{
+.address-box .address{
 	display:flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -270,24 +265,30 @@ footer{
 }
 
 /*media*/
-@media all and (max-width:749px){
+@media all and (max-width:1100px){
+	.logo-navigation .drop-list a{
+		font: 1.2rem 'Pangolin', sans-serif;
+		font-weight: bold;
+	}
+}
+@media all and (max-width:900px){
 
-	header .tel-navigation{
-		display: block;
-	}
-	header .tel-navigation a{
-		font: 1.9vw 'Pangolin', sans-serif;
-		display: inline-block;
-	}
-	.address-box .address ul li, .address-box .address a{
-		font: 3vw 'Pangolin', sans-serif;
-	}
+    /*header .tel-navigation{
+        display: block;
+  }
+    /*header .tel-navigation a{
+        font: 180% 'Pangolin', sans-serif;
+        display: inline-block;
+    }*/
+    header .tel-navigation .tel-list{
+        display: block;
+    }
 	.wrapper .fa{
-		font-size: 3vw;
+		/*font-size: 3vw;*/
 		padding-right: 0;
 	}
 	.wrapper .fa-instagram .fa-facebook{
-		font-size: 4.5vw;
+		/*font-size: 4.5vw;*/
 	}
 	header .logo-navigation .navigation-menu{
 		width: 0;
@@ -296,7 +297,6 @@ footer{
 		background-image: url(../img/Logo.png);
 		width: 80px;
 		height: 80px;
-
 	}
 	.logo-navigation .navigation-menu .drop-list{
 		display: block;
@@ -306,100 +306,54 @@ footer{
 		text-align: center;
 		list-style: none;
 		width: 100%;
-		height: 300%;
+		height: 100vh;
 		background: rgba(116, 255, 198, 0.750);
-	}
-	.logo-navigation .drop-list a{
-		font: 4vw 'Pangolin', sans-serif;
-		font-weight: bold;
 	}
 	.logo-navigation .navigation-menu .drop-list li{
 		margin-top: 17px ;
 		overflow: hidden;
 	}
 	.navigation-menu .drop-list li ul{
+		display: none;
 		text-align: center;
 		width: 100%;
 		position: relative;
 		background: rgba(255, 255, 255, 0.25);
 	}
 	.navigation-menu .drop-list ul li a{
-		background: rgba(255, 255, 255, 0.25);
-		font: 2.9vw 'Pangolin', sans-serif;
+		font-size: 1rem;
 	}
-	/*.logo-navigation li a{
-		display: inline-block;
-		font: 22px 'Pangolin', sans-serif;
-		color: #B7B7B7;
-		text-decoration: none;
-		padding-top: 10px;
-	}*/
 	.hidden {
 		display: none;
 	}
 
-	.wrapper .main-box-wrapper{
+
+	.top-content-box, .bottom-content-box{
+		flex-direction: column;
+		margin: 0;
+        height: auto;
+	}
+	.wrapper .main-content-wrapper{
 		height: auto;
 	}
-	.wrapper .main-box-wrapper .main-box{
-		height: auto;
-	}
-	.main-box-wrapper .main-box .about-us {
+
+	.about-us, .our-philosophy, .reviews, .video-box{
 		display: block;
 		position: relative;
 		width: 100%;
 		height: auto;
-		margin-bottom: 5px;
+		margin: 10px 0;
 	}
-	.main-box-wrapper .main-box .our-philosophy {
-		display: block;
-		position: relative;
-		width: 100%;
-		top: 0;
-		right: 0;
-		height: auto;
-		margin-bottom: 5px;
-
-	}
-	.main-box .reviews {
-		display: block;
-		position: relative;
-		width: 100%;
-		left: 0;
-		height: auto;
-		margin-bottom: 5px;
-	}
-
-	.video-box{
-		display: block;
-		position: relative;
-		width: 100%;
-		bottom: 0;
-		right: 0;
-		height: 87vh;
-		margin-bottom: 5px;
-
-
-	}
-	.video-box div, .video-box div div{
-		width: 100%;
-		height:40vh;
-		padding: auto;
-	}
-
 
 	.wrapper .address-box .map-box {
-
 		width: 100vw;
-
-	}
+        }
 	.wrapper .address-box .address{
-
 		width: 100vw;
-
+        height: auto;
+        position: relative;
 	}
 /*button transform*/
-
 	.btn-mob {
 		display: inline-block;
 		width: 50px;
@@ -439,18 +393,24 @@ footer{
 	.btn-mob_active span:after {
 		transform: rotate(-45deg);
 	}
-	/*button transform*/
-
+	/*slider*/
 	.wrapper .slider-box .nav-slider {
 		display: none;
 	}
 	.swiper-container {
 		width: 100%;
         height: 50vh;
+        background-size: contain;
 	}
     .slider-box {
         margin-top:25vh;
         height: 20vh;
     }
 }
-/*media*/
+@media all and (max-width:400px){
+	.video-box div, .video-box div div{
+		width: 100%;
+		height:auto;
+		padding: auto;
+	}
+}
