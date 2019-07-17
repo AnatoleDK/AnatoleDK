@@ -87,7 +87,7 @@ header .logo-navigation .logo-img {
 	font: 1.5rem 'Pangolin', sans-serif;
 
 }
-.logo-navigation .drop-list a:after {
+.logo-navigation .drop-list .direction:after {
 	color: #000000;
 	font: 1.5rem 'Pangolin', sans-serif;
 	height: 0;
@@ -118,8 +118,8 @@ header .logo-navigation .logo-img {
 	visibility: hidden;
 	opacity: 0;
 	position: absolute;
-	transition: all 0.5s ease;
-	left: 400px;
+	transition: all 0.4s ease;
+	left: 40px;
 	width: 20vw;
 	background: rgba(116, 255, 198, 0.91);
 	}
@@ -269,11 +269,11 @@ footer{
         display: block;
     }
 	.wrapper .fa{
-		/*font-size: 3vw;*/
+		font-size: .8rem;
 		padding-right: 0;
 	}
-	.wrapper .fa-instagram .fa-facebook{
-		/*font-size: 4.5vw;*/
+	.wrapper .fa-instagram, .wrapper .fa-facebook{
+		font-size: 1.5rem;
 	}
 	header .logo-navigation .navigation-menu{
 		width: 0;
