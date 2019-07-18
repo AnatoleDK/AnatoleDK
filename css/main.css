@@ -333,6 +333,7 @@ footer {
 		width: 100vw;
         }
 	.wrapper .address-box .address {
+		font: .7rem 'Pangolin', sans-serif;
 		width: 100vw;
         height: auto;
         position: relative;
