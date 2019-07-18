@@ -2,25 +2,28 @@
 @import url(style-slider.css);
 @import url(https://fonts.googleapis.com/css?family=Pangolin&subset=cyrillic-ext);
 @import url(https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
-*{
+* {
 	box-sizing:border-box;
 }
-body{
+body {
 	width: 100%;
 	height: 100%;
 	font: calc(1vw + 1vh + .5vmin) 'Pangolin', sans-serif, cursive;
 	color: #000000;
 	background: rgba(116, 255, 198, 0.38);
 }
-.wrapper{
+.wrapper {
 	width: 100%;
 	height: 100%;
 	background-image: url(../img/leafe1649637771.gif);
 }
-body .wrapper a:hover{
+body a {
+    color: #000000;
+}
+body a:hover {
 	color: #ffffff;
 }
-header{
+header {
     position: fixed;
 	top: 0;
 	right: 0;
@@ -29,7 +32,7 @@ header{
 	z-index: 5;
 	min-height: 19%;
 }
-header .tel-navigation{
+header .tel-navigation {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -49,10 +52,10 @@ header .tel-navigation .tel-list {
 	width: 45%;
 	color: #000000;
 }
-header .fa{
+header .fa {
 	font-size: 1rem;
 }
-header .logo-navigation{
+header .logo-navigation {
 	display: flex;
 	position: relative;
 	flex-direction: row;
@@ -70,10 +73,10 @@ header .logo-navigation .logo-img {
     background-position: center;
     background-size: cover;
 }
-.logo-navigation .navigation-menu{
+.logo-navigation .navigation-menu {
 	width: 70vw;
 }
-.logo-navigation .drop-list{
+.logo-navigation .drop-list {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -82,7 +85,7 @@ header .logo-navigation .logo-img {
 	color: #000000;
 	padding-bottom: 7px;
 }
-.logo-navigation .drop-list a{
+.logo-navigation .drop-list a {
 	color: #000000;
 	font: 1.5rem 'Pangolin', sans-serif;
 
@@ -111,7 +114,7 @@ header .logo-navigation .logo-img {
 	background: rgba(116, 255, 198, 0.82);
     transition: all 0.2s ease;
 }
-.navigation-menu ul li{
+.navigation-menu ul li {
 	position: relative;
 }
 .navigation-menu ul li ul {
@@ -122,7 +125,7 @@ header .logo-navigation .logo-img {
 	left: 40px;
 	width: 20vw;
 	background: rgba(116, 255, 198, 0.91);
-	}
+}
 .navigation-menu ul li:hover > ul,
 .navigation-menu ul li ul:hover {
 	visibility: visible;
@@ -135,7 +138,7 @@ ul li ul li {
 	clear: both;
 	width: 100%;
 }
-.slider-box{
+.slider-box {
 	display: block;
 	margin-top: 25vh;
 	position: relative;
@@ -153,16 +156,16 @@ ul li ul li {
     left: 5%;
     background-position: 50% 50%;
 }
-.main-content-wrapper{
+.main-content-wrapper {
     position: relative;
 	width: 100vw;
 	color: #000000;
 	font: 1rem 'Pangolin', sans-serif;
 }
-.main-content-wrapper p{
+.main-content-wrapper p {
 	padding: 3vh 3vw;
 }
-.top-content-box, .bottom-content-box{
+.top-content-box, .bottom-content-box {
 	display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -170,7 +173,7 @@ ul li ul li {
 	margin-bottom: 1%;
 	margin-top: 1%;
 }
-.about-us{
+.about-us {
 	align-self: flex-start;
 	width: 55vw;
 	background: rgba(157, 255, 208, 0.75);
@@ -178,14 +181,14 @@ ul li ul li {
 	border-radius: 2%;
 	margin-left: 2%;
 }
-.our-philosophy{
+.our-philosophy {
 	align-self: flex-end;
 	width: 41vw;
 	background: rgba(157, 255, 208, 0.75);
 	box-shadow: 12px 12px 10px rgb(214, 214, 214);
 	border-radius: 2%;
 }
-.reviews{
+.reviews {
 	width: 40vw;
 	background: rgba(157, 255, 208, 0.75);
 	box-shadow: 12px 12px 10px rgb(214, 214, 214);
@@ -198,18 +201,18 @@ ul li ul li {
 	border-radius: 2%;
 	margin-right: 4%;
 }
-.video-box div{
+.video-box div {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	width: 100%;
 	height: 40vh;
 }
-.video-box div div{
+.video-box div div {
 	width: 50%;
 	padding: 5px 5px;
 }
-h2, h3{
+h2, h3 {
 	text-align: center;
 	font: 1rem 'Pangolin', sans-serif;
 	padding: 5px 5px;
@@ -217,12 +220,12 @@ h2, h3{
 /*
 map and address
 */
-.address-box-wrapper{
+.address-box-wrapper {
 	display: block;
     position: relative;
     height: auto;
 }
-.address-box{
+.address-box {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -233,7 +236,7 @@ map and address
 	height: 50vh;
 	padding: 15px 15px;
 }
-.address-box .address{
+.address-box .address {
 	display:flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -241,10 +244,10 @@ map and address
 	width: 48vw;
 	padding: 15px 15px;
 }
-.address-box .address ul li{
+.address-box .address ul li {
 	padding: 5px 5px;
 }
-footer{
+footer {
 	position: relative;
 	height: 65px;
 	width: 100%;
@@ -257,25 +260,25 @@ footer{
 	justify-content: center;
 }
 /*media*/
-@media all and (max-width:1100px){
-	.logo-navigation .drop-list a{
+@media all and (max-width:1100px) {
+	.logo-navigation .drop-list a {
 		font: 1.2rem 'Pangolin', sans-serif;
 		font-weight: bold;
 	}
 }
-@media all and (max-width:900px){
+@media all and (max-width:900px) {
 
-    header .tel-navigation .tel-list{
+    header .tel-navigation .tel-list {
         display: block;
     }
-	.wrapper .fa{
+	.wrapper .fa {
 		font-size: .8rem;
 		padding-right: 0;
 	}
-	.wrapper .fa-instagram, .wrapper .fa-facebook{
+	.wrapper .fa-instagram, .wrapper .fa-facebook {
 		font-size: 1.3rem;
 	}
-	header .logo-navigation .navigation-menu{
+	header .logo-navigation .navigation-menu {
 		width: 0;
 	}
 	header .logo-navigation .logo-img {
@@ -283,7 +286,7 @@ footer{
 		width: 80px;
 		height: 80px;
 	}
-	.logo-navigation .navigation-menu .drop-list{
+	.logo-navigation .navigation-menu .drop-list {
 		display: block;
 		position: absolute;
 		top: 101%;
@@ -294,32 +297,32 @@ footer{
 		height: 100vh;
 		background: rgba(116, 255, 198, 0.750);
 	}
-	.logo-navigation .navigation-menu .drop-list li{
+	.logo-navigation .navigation-menu .drop-list li {
 		margin-top: 17px ;
 		overflow: hidden;
 	}
-	.navigation-menu .drop-list li ul{
+	.navigation-menu .drop-list li ul {
 		display: none;
 		text-align: center;
 		width: 100%;
 		position: relative;
 		background: rgba(255, 255, 255, 0.25);
 	}
-	.navigation-menu .drop-list ul li a{
+	.navigation-menu .drop-list ul li a {
 		font-size: 1rem;
 	}
 	.hidden {
 		display: none;
 	}
-	.top-content-box, .bottom-content-box{
+	.top-content-box, .bottom-content-box {
 		flex-direction: column;
 		margin: 0;
         height: auto;
 	}
-	.wrapper .main-content-wrapper{
+	.wrapper .main-content-wrapper {
 		height: auto;
 	}
-	.about-us, .our-philosophy, .reviews, .video-box{
+	.about-us, .our-philosophy, .reviews, .video-box {
 		display: block;
 		position: relative;
 		width: 100%;
@@ -329,7 +332,7 @@ footer{
 	.wrapper .address-box .map-box {
 		width: 100vw;
         }
-	.wrapper .address-box .address{
+	.wrapper .address-box .address {
 		width: 100vw;
         height: auto;
         position: relative;
@@ -388,7 +391,7 @@ footer{
         height: 20vh;
     }
 }
-@media all and (max-width:400px){
+@media all and (max-width:400px) {
 	.video-box div, .video-box div div{
 		width: 100%;
 		height:auto;
