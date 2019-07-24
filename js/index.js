@@ -87,16 +87,22 @@ var navSlider = new Swiper(navSliderSelector, navSliderOptions);
 mainSlider.controller.control = navSlider;
 navSlider.controller.control = mainSlider;
 
+var jq_container = $('.wrapper');
 //button
-$('.btn-mob').on('click', function() {
+jq_container.find('.btn-mob').on('click', function(){
      $(this).toggleClass('btn-mob_active');
 });
 
 
-    let btn = document.querySelector('.btn-mob');
-    let list = document.querySelector('.navigation-menu');
-    btn.addEventListener('click', function(){
-        list.classList.toggle('hidden');
-    });
+let btn = document.querySelector('.btn-mob');
+let list = document.querySelector('.navigation-menu');
+btn.addEventListener('click', function(){
+    list.classList.toggle('hidden');
+});
 
-//button
+jq_container.find('.drop-list').on('click', function(){
+    jq_container.find('.navigation-menu').addClass('hidden');
+    jq_container.find('.btn-mob').removeClass('btn-mob_active');
+});
+
+//comments

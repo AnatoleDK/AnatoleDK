@@ -105,6 +105,9 @@ header .logo-navigation .logo-img {
 	position: relative;
 	top: -1px;
 }
+.logo-navigation .drop-list .direction {
+	margin-left: 12px;
+}
 .navigation-menu li {
 	display: block;
 	transition-duration: 0.5s;
@@ -162,7 +165,7 @@ ul li ul li {
 	color: #000000;
 	font: 1rem 'Pangolin', sans-serif;
 }
-.main-content-wrapper p {
+.main-content-wrapper .top-content-box p {
 	padding: 3vh 3vw;
 }
 .top-content-box, .bottom-content-box {
