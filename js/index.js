@@ -1,10 +1,10 @@
 // Params
-var mainSliderSelector = '.main-slider',
+let mainSliderSelector = '.main-slider',
     navSliderSelector = '.nav-slider',
     interleaveOffset = 0.5;
 
 // Main Slider
-var mainSliderOptions = {
+let mainSliderOptions = {
       loop: true,
       speed:1000,
       autoplay:{
@@ -26,17 +26,17 @@ var mainSliderOptions = {
           this.autoplay.start();
         },
         slideChangeTransitionEnd: function(){
-          var swiper = this,
+          let swiper = this,
               captions = swiper.el.querySelectorAll('.caption');
-          for (var i = 0; i < captions.length; ++i) {
+          for (let i = 0; i < captions.length; ++i) {
             captions[i].classList.remove('show');
           }
           swiper.slides[swiper.activeIndex].querySelector('.caption').classList.add('show');
         },
         progress: function(){
-          var swiper = this;
-          for (var i = 0; i < swiper.slides.length; i++) {
-            var slideProgress = swiper.slides[i].progress,
+          let swiper = this;
+          for (let i = 0; i < swiper.slides.length; i++) {
+            let slideProgress = swiper.slides[i].progress,
                 innerOffset = swiper.width * interleaveOffset,
                 innerTranslate = slideProgress * innerOffset;
             swiper.slides[i].querySelector(".slide-bgimg").style.transform =
@@ -44,14 +44,14 @@ var mainSliderOptions = {
           }
         },
         touchStart: function() {
-          var swiper = this;
-          for (var i = 0; i < swiper.slides.length; i++) {
+          let swiper = this;
+          for (let i = 0; i < swiper.slides.length; i++) {
             swiper.slides[i].style.transition = "";
           }
         },
         setTransition: function(speed) {
-          var swiper = this;
-          for (var i = 0; i < swiper.slides.length; i++) {
+          let swiper = this;
+          for (let i = 0; i < swiper.slides.length; i++) {
             swiper.slides[i].style.transition = speed + "ms";
             swiper.slides[i].querySelector(".slide-bgimg").style.transition =
               speed + "ms";
@@ -59,10 +59,10 @@ var mainSliderOptions = {
         }
       }
     };
-var mainSlider = new Swiper(mainSliderSelector, mainSliderOptions);
+let mainSlider = new Swiper(mainSliderSelector, mainSliderOptions);
 
 // Navigation Slider
-var navSliderOptions = {
+let navSliderOptions = {
       loop: true,
       loopAdditionalSlides: 10,
       speed:1000,
@@ -81,18 +81,18 @@ var navSliderOptions = {
         }
       }
     };
-var navSlider = new Swiper(navSliderSelector, navSliderOptions);
+let navSlider = new Swiper(navSliderSelector, navSliderOptions);
 
 // Matching sliders
 mainSlider.controller.control = navSlider;
 navSlider.controller.control = mainSlider;
 
-var jq_container = $('.wrapper');
 //button
+let jq_container = $('.wrapper');
+
 jq_container.find('.btn-mob').on('click', function(){
      $(this).toggleClass('btn-mob_active');
 });
-
 
 let btn = document.querySelector('.btn-mob');
 let list = document.querySelector('.navigation-menu');
@@ -105,4 +105,3 @@ jq_container.find('.drop-list').on('click', function(){
     jq_container.find('.btn-mob').removeClass('btn-mob_active');
 });
 
-//comments

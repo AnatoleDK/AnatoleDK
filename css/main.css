@@ -195,9 +195,12 @@ ul li ul li {
 	width: 40vw;
 	background: rgba(157, 255, 208, 0.75);
 	box-shadow: 12px 12px 10px rgb(214, 214, 214);
+	padding: 5px 18px;
+	overflow-y: scroll;
+	height: 53vh;
 }
 .reviews .disqus_thread{
-	overflow: scroll;
+
 }
 .video-box{
 	width: 48vw;
