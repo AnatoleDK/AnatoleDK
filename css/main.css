@@ -187,13 +187,14 @@ ul li ul li {
 .our-philosophy {
 	align-self: flex-end;
 	width: 41vw;
-	background: rgba(157, 255, 208, 0.75);
+	background: rgba(255, 255, 255, 0.54);
 	box-shadow: 12px 12px 10px rgb(214, 214, 214);
 	border-radius: 2%;
+	border: 5px solid rgba(157, 255, 208, 0.55);
 }
 .reviews {
 	width: 40vw;
-	background: rgba(157, 255, 208, 0.75);
+	background: rgba(157, 255, 208, 0.36);
 	box-shadow: 12px 12px 10px rgb(214, 214, 214);
 	padding: 5px 18px;
 	overflow-y: scroll;
@@ -242,7 +243,8 @@ map and address
 	display: inline-block;
 	width: 50vw;
 	height: 50vh;
-	padding: 15px 15px;
+	margin: 15px 0;
+	border: 5px solid rgba(157, 255, 208, 0.55);
 }
 .address-box .address {
 	display:flex;
@@ -250,9 +252,22 @@ map and address
 	flex-wrap: nowrap;
 	justify-content: space-around;
 	width: 48vw;
-	padding: 15px 15px;
+	margin: 15px 0;
 }
-.address-box .address ul li {
+.address-box .address form {
+    display:flex;
+    flex-direction: column;
+}
+.address form input{
+    border: 2px solid rgba(116, 255, 198, 0.82);
+    background: rgba(255, 255, 255, 0.54);
+    margin: 3px 3px;
+    width: 150px;
+}
+.address-box .address .btn-address {
+    background-color: rgba(157, 255, 208, 0.55);
+}
+.address ul li {
 	padding: 5px 5px;
 }
 footer {
@@ -398,6 +413,9 @@ footer {
     .slider-box {
         margin-top:25vh;
         height: 20vh;
+    }
+    .address form input{
+        width: 110px;
     }
 }
 @media all and (max-width:400px) {
