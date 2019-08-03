@@ -258,9 +258,11 @@
                             <li>inbeauty.ua@gmail.com</li>
                         </ul>
                          <form action="send.php" method="post">
-                             <input type="text" name="fio" placeholder="Укажите ФИО" required>
-                             <input type="text" name="email" placeholder="Укажите e-mail" required>
-                             <input class="btn-address" type="submit" value="Отправить">
+                             <input placeholder="Ваше имя" type="text" name="fio" required>
+                             <input placeholder="Ваш e-mail" type="email" name="email">
+                             <textarea name="message" cols="30" rows="3" placeholder="Напишите ваше сообщение сюда..."></textarea>
+                             <div class="g-recaptcha" data-sitekey="ключ сайта"></div>
+                             <input type="submit" value="Отправить">
                          </form>
                      </nav>
                 </div>
@@ -277,5 +279,6 @@
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
     <script  src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 	<script  src='js/index.js'></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>

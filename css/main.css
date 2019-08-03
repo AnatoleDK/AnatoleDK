@@ -179,36 +179,41 @@ ul li ul li {
 .about-us {
 	align-self: flex-start;
 	width: 55vw;
-	background: rgba(157, 255, 208, 0.75);
+	background: rgba(244, 244, 244, 0.3);
 	box-shadow: 12px 12px 10px rgb(214, 214, 214);
 	border-radius: 2%;
 	margin-left: 2%;
+	border: 5px solid rgba(157, 255, 208, 0.55);
 }
 .our-philosophy {
 	align-self: flex-end;
 	width: 41vw;
-	background: rgba(255, 255, 255, 0.54);
+	background: rgba(244, 244, 244, 0.3);
 	box-shadow: 12px 12px 10px rgb(214, 214, 214);
 	border-radius: 2%;
 	border: 5px solid rgba(157, 255, 208, 0.55);
 }
 .reviews {
 	width: 40vw;
-	background: rgba(157, 255, 208, 0.36);
+	background: rgba(244, 244, 244, 0.3);
 	box-shadow: 12px 12px 10px rgb(214, 214, 214);
 	padding: 5px 18px;
 	overflow-y: scroll;
 	height: 53vh;
+	border: 5px solid rgba(157, 255, 208, 0.55);
 }
 .reviews .disqus_thread{
-
+	background: rgba(244, 244, 244, 0.3);
+	box-shadow: 12px 12px 10px rgb(214, 214, 214);
+	border: 5px solid rgba(157, 255, 208, 0.55);
 }
 .video-box{
 	width: 48vw;
-	background: rgba(157, 255, 208, 0.75);
+	background: rgba(244, 244, 244, 0.3);
 	box-shadow: 12px 12px 10px rgb(214, 214, 214);
 	border-radius: 2%;
 	margin-right: 4%;
+	border: 5px solid rgba(157, 255, 208, 0.55);
 }
 .video-box div {
 	display: flex;
@@ -258,11 +263,11 @@ map and address
     display:flex;
     flex-direction: column;
 }
-.address form input{
+.address form input, .address form textarea{
     border: 2px solid rgba(116, 255, 198, 0.82);
     background: rgba(255, 255, 255, 0.54);
     margin: 3px 3px;
-    width: 150px;
+    width: 160px;
 }
 .address-box .address .btn-address {
     background-color: rgba(157, 255, 208, 0.55);
