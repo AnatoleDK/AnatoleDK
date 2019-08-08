@@ -42,8 +42,7 @@ header .tel-navigation {
 }
 header .tel-navigation a, .address, .address a {
     font: 1rem 'Pangolin', sans-serif;
-    color: #000000;
-    padding: 5px 10px;
+	padding: 5px 10px;
 }
 header .tel-navigation .tel-list {
 	display: flex;
